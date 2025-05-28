@@ -57,9 +57,46 @@ Please refer to this picture to explain the behavior of early exit for LLM-based
 
 ## Experimental Results
 
+<div align="center">
+    <img width="70%" alt="image" src="https://github.com/Coldmist-Lu/AgentExit/blob/main/assets/results.png">
+</div>
 
+Findings:
 
-1. 
+1. Early-exit mechanisms significantly **reduce redundant steps**.
 
+2. **Minor performace drop** in success and progress rates.
 
+3. LLMs show **varying preferences** for early exit strategies.
+
+4. **Combining intrinsic and extrinsic** early exit maximizes performance retention.
+
+5. Early-exit strategye **generalizes to gaming environments**.
+
+## Practical Implications
+
+We simulate a practical scenario in embodied environments, where a weaker agent exits early from challenging environments and requests assistance from a stronger agent.
+
+We use ALFWorld as our testset, Mistral-24B-Instruct as the weak agent, and Llama3.1-70B-Instruct as the strong agent.
+
+<div align="center">
+    <img width="60%" alt="image" src="https://github.com/Coldmist-Lu/AgentExit/blob/main/assets/practical-implication.png">
+</div>
+
+We find that early exit followed by strong agent assistance yields **over a 10% improvement** in success rate within the same 40-step budget.
+
+The implementation of the agent, followed by the other agent history can be seen in [React Style Agent History](./agentboard/agents/react_style_agent_history.py).
+
+## Citation
+If you find this work helpful, please consider citing as follows:  
+
+```ruby
+@article{Lu2025AgentExit,
+  title={Runaway is Ashamed, But Helpful: On the Early-Exit Behavior of Large Language Model-based Agents in Embodied Environments},
+  author={Lu, Qingyu and Ding, Liang and Cao, Siyi and Liu, Xuebo and Zhang, Kanjian and Zhang, Jinxia and Tao, Dacheng},
+  journal={arXiv preprint},
+  url={https://arxiv.org/pdf/2505.17616},
+  year={2025}
+}
+```
 
