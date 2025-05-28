@@ -1,6 +1,6 @@
 # AgentExit
 
-<b>Runaway is Ashamed, But Helpful: On the Early-Exit Behavior of Large Language Model-based Agents in Embodied Environments</b>[full paper](https://arxiv.org/pdf/2505.17616)
+<b>Runaway is Ashamed, But Helpful: On the Early-Exit Behavior of Large Language Model-based Agents in Embodied Environments</b> [Full paper](https://arxiv.org/pdf/2505.17616)
 
 This repository presents AgentExit, a framework for large language model(LLM)-based agents to early exit when necessary. It is built on [AgentBoard](https://hkust-nlp.github.io/agentboard/), and provide the agent code for replication of the study and as a plug-and-play tool for agent manipulation.
 
